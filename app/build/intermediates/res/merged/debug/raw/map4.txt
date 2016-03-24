@@ -1,0 +1,24 @@
+! Benito game
+! the map must be 12 rows by 101 columns
+! Benito icon starts at line 18 column 8
+! Q-Bot Level 1
+! # = Tile Legend 
+! 5 = TileDirt
+! 8 = GrassTop
+! 2 = GrassBot
+! 4 = GrassLeft
+! 6 = GrassRight
+! 9 = cactus
+! 3 = avila
+22222222222222222222222222222222222222222222222222222222222222222222222222                            
+                                               4
+                                               4
+                                               4
+                                               4                                                 9
+                                               3                                    888     88888888  
+88  88888888 
+                                    1        8888                       1     88
+                                                                       888
+                                    9     
+                   1             88888888                           7
+                8888   88888                           88    888  888
