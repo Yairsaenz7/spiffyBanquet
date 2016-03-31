@@ -2,5 +2,9 @@
     {
         "merged": "C:\\Users\\Yair\\StudioProjects\\Benito\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi-v4\\splash.png",
         "source": "C:\\Users\\Yair\\StudioProjects\\Benito\\app\\src\\main\\res\\mipmap-xxxhdpi\\splash.png"
+    },
+    {
+        "merged": "C:\\Users\\Yair\\StudioProjects\\Benito\\spiffybanquet\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi-v4\\splash.png",
+        "source": "C:\\Users\\Yair\\StudioProjects\\Benito\\spiffybanquet\\app\\src\\main\\res\\mipmap-xxxhdpi\\splash.png"
     }
 ]

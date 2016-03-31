@@ -1,5 +1,6 @@
 package com.kilobolt.robotgame;
 
+import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
@@ -170,47 +171,83 @@ public class GameScreen extends Screen {
 		Collections.shuffle(Arrays.asList(SampleGame.maps));
 		
 		//then we go through each map and build it
-				for (int k= 0;k<SampleGame.maps.length;k++){
+		for (int currentMap= 0;currentMap<SampleGame.maps.length;currentMap++){
 
-								scanner = new Scanner(SampleGame.maps[k]);//here we get a random map
-								while (scanner.hasNextLine()) {
-									
-									String line = scanner.nextLine();
-									
-									// no more lines to read
-									if (line == null) {
-										break;
-									}
-						
-									if (!line.startsWith("!")) {//if line is not a comment,load the line
-										lines.add(line);
-										width = Math.max(width, line.length());//lets get the longest line and save it in width
-						
-									}
+						scanner = new Scanner(SampleGame.maps[currentMap]);//here we get a random map
+						while (scanner.hasNextLine()) {
+
+							String line = scanner.nextLine();
+
+							// no more lines to read
+							if (line == null) {
+								break;
+							}
+
+							if (!line.startsWith("!")) {//if line is not a comment,load the line
+								lines.add(line);
+								width = Math.max(width, line.length());//lets get the longest line and save it in width
+
+							}
+						}
+						height = lines.size();///determine the height based on the lines loaded
+
+
+
+						for (int currentRow = 0; currentRow < rows; currentRow++) {//for each row, which is 12 of them
+							String line = (String) lines.get(currentRow);//line is the current line
+
+							for (int currentColumn = cols *currentMap; currentColumn < cols*(currentMap+1); currentColumn++) {//from 0 to cols which is 100, the width of each random map
+
+								if (currentColumn < line.length()+(cols*currentMap)) {//if is in bounds of the current line
+									char ch = line.charAt(currentColumn-(cols*currentMap));//lets get the tile number
+									Tile t = new Tile(currentColumn, currentRow, Character.getNumericValue(ch));
+									tilearray.add(t);
+
 								}
-								height = lines.size();///determine the height based on the lines loaded 
-						
-								
-								
-								for (int j = 0; j < rows; j++) {//for each row, which is 12 of them
-									String line = (String) lines.get(j);//line is the current line
-									
-									for (int i = cols *k; i < cols*(k+1); i++) {//from 0 to cols which is 100, the width of each random map
-						
-										if (i < line.length()+(cols*k)) {//if is in bounds of the current line
-											char ch = line.charAt(i-(cols*k));//lets get the tile number
-											Tile t = new Tile(i, j, Character.getNumericValue(ch));
-											tilearray.add(t);
-											
-										}
-						
-									}
-								}
-								lines.clear();//clear the lines list, otherwise the map will repeat
-				}//end for loop
+
+							}
+						}
+						lines.clear();//clear the lines list, otherwise the map will repeat
+		}//end for loop
+
+
+		//now we write the final map, the fun one
+		int currentMap = 6;
+		scanner = new Scanner(SampleGame.finalMap);//here we get a random map
+		while (scanner.hasNextLine()) {
+
+			String line = scanner.nextLine();
+
+			// no more lines to read
+			if (line == null) {
+				break;
+			}
+
+			if (!line.startsWith("!")) {//if line is not a comment,load the line
+				lines.add(line);
+				width = Math.max(width, line.length());//lets get the longest line and save it in width
+
+			}
+		}
+		height = lines.size();///determine the height based on the lines loaded
 
 
 
+		for (int currentRow = 0; currentRow < rows; currentRow++) {//for each row, which is 12 of them
+			String line = (String) lines.get(currentRow);//line is the current line
+
+			for (int currentColumn = cols *currentMap; currentColumn < cols*(currentMap+1); currentColumn++) {//from 0 to cols which is 100, the width of each random map
+
+				if (currentColumn < line.length()+(cols*currentMap)) {//if is in bounds of the current line
+					char ch = line.charAt(currentColumn-(cols*currentMap));//lets get the tile number
+					Tile t = new Tile(currentColumn, currentRow, Character.getNumericValue(ch));
+					tilearray.add(t);
+
+				}
+
+			}
+		}
+		lines.clear();//clear the lines list, otherwise the map will repeat
 
 
 	}//end load map

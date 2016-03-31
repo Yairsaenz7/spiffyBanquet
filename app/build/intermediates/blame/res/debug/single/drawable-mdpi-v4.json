@@ -2,5 +2,9 @@
     {
         "merged": "C:\\Users\\Yair\\StudioProjects\\Benito\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\ic_launcher.png",
         "source": "C:\\Users\\Yair\\StudioProjects\\Benito\\app\\src\\main\\res\\drawable-mdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\Yair\\StudioProjects\\Benito\\spiffybanquet\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\ic_launcher.png",
+        "source": "C:\\Users\\Yair\\StudioProjects\\Benito\\spiffybanquet\\app\\src\\main\\res\\drawable-mdpi\\ic_launcher.png"
     }
 ]

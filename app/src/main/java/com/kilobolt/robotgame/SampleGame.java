@@ -17,8 +17,9 @@ package com.kilobolt.robotgame;
 //this class loads the map and that's about it
 public class SampleGame extends AndroidGame {
 
-    public static String[] maps = new String[3] ;
+    public static String[] maps = new String[6] ;
     public static String map ;
+    public static String finalMap;
     boolean firstTimeCreate = true;
 
     @Override
@@ -29,14 +30,17 @@ public class SampleGame extends AndroidGame {
             firstTimeCreate = false;
         }
 
-
+        String theMap = "";
         for(int i = 0;i< maps.length ; i++){
-            String theMap = "map" +i;
+            theMap = "map" +i;
             InputStream is = getResources().openRawResource(getResources().getIdentifier(theMap, "raw", getPackageName()));
             maps[i] = convertStreamToString(is);
 
         }
 
+        theMap = "map" +6;
+        InputStream is = getResources().openRawResource(getResources().getIdentifier(theMap, "raw", getPackageName()));
+        finalMap = convertStreamToString(is);
 
         return new SplashLoadingScreen(this);
 
