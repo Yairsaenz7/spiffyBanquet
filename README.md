@@ -1,4 +1,4 @@
-# spiffyBanquet
+# Spiffy Banquet
 Cat scrolling platform android  game
 
 This is an android java platform game that I created just for fun. Based of the kilobolt example.  Please load this in Android Studio.
