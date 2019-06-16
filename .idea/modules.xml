@@ -3,7 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/spiffybanquet.iml" filepath="$PROJECT_DIR$/spiffybanquet.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spiffyBanquet.iml" filepath="$PROJECT_DIR$/spiffyBanquet.iml" />
     </modules>
   </component>
 </project>

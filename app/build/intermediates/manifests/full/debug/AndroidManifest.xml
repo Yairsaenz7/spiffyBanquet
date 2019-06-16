@@ -16,7 +16,7 @@
         android:icon="@drawable/icon"
         android:label="Spiffy Banquet" >
         <activity
-            android:name="com.kilobolt.robotgame.SampleGame"
+            android:name="com.spiffybanquet.spiffy.SampleGame"
             android:configChanges="keyboard|keyboardHidden|orientation"
             android:label="Spiffy Banquet"
             android:screenOrientation="landscape" >

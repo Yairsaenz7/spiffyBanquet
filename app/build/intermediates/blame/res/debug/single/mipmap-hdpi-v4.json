@@ -1,10 +1,14 @@
 [
     {
-        "merged": "C:\\Users\\Yair\\StudioProjects\\Benito\\spiffybanquet\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi-v4\\splash.png",
-        "source": "C:\\Users\\Yair\\StudioProjects\\Benito\\spiffybanquet\\app\\src\\main\\res\\mipmap-hdpi\\splash.png"
+        "merged": "/Users/saenzyx/Documents/spiffyBanquet/C:\\Users\\Yair\\StudioProjects\\Benito\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi-v4\\splash.png",
+        "source": "/Users/saenzyx/Documents/spiffyBanquet/C:\\Users\\Yair\\StudioProjects\\Benito\\app\\src\\main\\res\\mipmap-hdpi\\splash.png"
     },
     {
-        "merged": "C:\\Users\\Yair\\StudioProjects\\Benito\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi-v4\\splash.png",
-        "source": "C:\\Users\\Yair\\StudioProjects\\Benito\\app\\src\\main\\res\\mipmap-hdpi\\splash.png"
+        "merged": "/Users/saenzyx/Documents/spiffyBanquet/app/build/intermediates/res/merged/debug/mipmap-hdpi-v4/splash.png",
+        "source": "/Users/saenzyx/Documents/spiffyBanquet/app/src/main/res/mipmap-hdpi/splash.png"
+    },
+    {
+        "merged": "/Users/saenzyx/Documents/spiffyBanquet/C:\\Users\\Yair\\StudioProjects\\Benito\\spiffybanquet\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi-v4\\splash.png",
+        "source": "/Users/saenzyx/Documents/spiffyBanquet/C:\\Users\\Yair\\StudioProjects\\Benito\\spiffybanquet\\app\\src\\main\\res\\mipmap-hdpi\\splash.png"
     }
 ]
